@@ -87,5 +87,12 @@
             }
 
         }
+        function bindFunction(obj,func) {
+            return function(){
+                func.apply(obj, arguments);
+            }
+        }
+
+        window['ADS']['bindFunction'] = bindFunction;
     }
 })()
