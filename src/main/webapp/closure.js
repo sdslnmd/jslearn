@@ -1,0 +1,25 @@
+var myObject =(function(){
+    var value = 0;
+    return {
+        increment:function (inc) {
+            value += typeof inc === 'number' ? inc : 1;
+        },
+        getValue:function(){
+            return value;
+        }
+    }
+}());//立即执行初始化
+
+var quo=function(state) {
+    return {
+        getState:function(){
+            return state;
+        }
+    };
+};
+
+//alert(myObject.getValue());
+//alert(quo(1).getState()) //在这里执行初始化
+
+var add1 = add.curry(1);
+alert(add1(6));
