@@ -30,6 +30,15 @@ var uniqueID=(function(){
 })();
 //alert(uniqueID())
 
+var module = {};
+((function(exports){
+    exports.notGloablFunction=function(){
+        console.log("notGloablFunction");
+    };
+})(module));
+
+module.notGloablFunction(); //outputs "I am not global"
+
 function markFunc(x) {
     return function(){return x};
 }
@@ -39,3 +48,5 @@ var fun=function(arg1,arg2) {
     //do anything you want here
 };
 //fun.call(Object, arg1, arg2);
+
+
