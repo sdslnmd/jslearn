@@ -20,6 +20,7 @@ var quo=function(state) {
 
 //alert(myObject.getValue());
 //alert(quo(1).getState()) //在这里执行初始化
+alert(new quo(1).getState()) //在这里执行初始化
 
 var uniqueID=(function(){
     var id=0;
@@ -27,12 +28,7 @@ var uniqueID=(function(){
         return id++;
     };
 })();
-alert(uniqueID())
-alert(uniqueID())
-alert(uniqueID())
-alert(uniqueID())
-
-
+//alert(uniqueID())
 
 function markFunc(x) {
     return function(){return x};
