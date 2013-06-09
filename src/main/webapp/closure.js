@@ -21,8 +21,6 @@ var quo=function(state) {
 //alert(myObject.getValue());
 //alert(quo(1).getState()) //在这里执行初始化
 
-var add1 = add.curry(1);
-alert(add1(6));
 var uniqueID=(function(){
     var id=0;
     return function(){
@@ -33,6 +31,8 @@ alert(uniqueID())
 alert(uniqueID())
 alert(uniqueID())
 alert(uniqueID())
+
+
 
 function markFunc(x) {
     return function(){return x};
