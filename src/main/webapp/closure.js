@@ -19,7 +19,7 @@ var quo=function(state) {
 };
 
 //alert(myObject.getValue());
-//alert(quo(1).getState()) //在这里执行初始化
+//alert(quo(1).getState(¡)) //在这里执行初始化
 alert(new quo(1).getState()) //在这里执行初始化
 
 var uniqueID=(function(){
@@ -38,11 +38,6 @@ var module = {};
 })(module));
 
 module.notGloablFunction(); //outputs "I am not global"
-
-function markFunc(x) {
-    return function(){return x};
-}
-var a = [markFunc("a"), markFunc("b"), markFunc("c")];
 
 var fun=function(arg1,arg2) {
     //do anything you want here
