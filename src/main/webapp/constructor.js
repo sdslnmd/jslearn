@@ -10,6 +10,7 @@ function myConstructor(message) {
         alert(myOwner.myMessage);
     }
 
+    //ASDF
 
     //特权方法（也是共有方法）
     this.appendToMessage = function (string) {
