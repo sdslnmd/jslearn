@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script type="text/javascript" src="helloAngular.js"></script>
+</head>
+<body>
+    <div ng-app="myApp">
+        <div ng-controller="MainCtrl">
+            <p class="username"> welcome,{{user.details.username}}</p>
+            <p class="id"> user ID,{{user.details.id}}</p>
+        </div>
+        <a custom-button>Click me</a>
+    </div>
+
+</body>
+</html>

@@ -2,11 +2,24 @@
 <html>
 <head>
     <title></title>
-    <script type="text/javascript" src="namespace.js"></script>
     <script type="text/javascript">
-        var namespace = YourGlobal.namespace("com.zuche.srms");
-        YourGlobal.com.zuche.srms.name = "123";
-        alert(YourGlobal.com.zuche);
+        //Javascript
+        function make_stack() {
+            return null
+        }
+        function push(stack, x) {
+            return {
+                top : function() { return x },
+                pop : function() { return stack }
+            }
+        }
+        function top(stack) {
+            return stack.top()
+        }
+        function pop(stack) {
+            return stack.pop()
+        }
+
     </script>
 
 </head>
