@@ -10,8 +10,16 @@
         <div ng-controller="MainCtrl">
             <p class="username"> welcome,{{user.details.username}}</p>
             <p class="id"> user ID,{{user.details.id}}</p>
-        </div>
+            <p class="abcdefg"> {{a|reverse}}</p>
+
         <a custom-button>Click me</a>
+
+        <input type="text" ng-model="lowerBound">
+
+        <ul>
+            <li ng-repeat="n in numbers|filter:greatThen">{{n}}</li>
+        </ul>
+        </div>
     </div>
 
 </body>
