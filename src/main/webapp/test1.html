@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        String.prototype.capitalize=function() {
+            return this.replace(/(^|\s)([a-z])/g,function(m,p1,p2,i,a){
+                console.log("p1 = "+p1);
+                console.log("p2 = "+p2);
+                console.log("i = "+i);
+
+                return p2.toUpperCase();
+            })
+        };
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
