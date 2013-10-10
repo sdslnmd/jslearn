@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script type="text/javascript" src="controllerBroadcast.js"></script>
+</head>
+<body>
+<div ng-app="app" ng-controller="parentCtr">
+    <div ng-controller="childCtr1">name:
+        <input type="text" ng-model="name" ng-change="change(name);"/>
+    </div>
+    <div ng-controller="childCtr2">
+        <input type="text" ng-model="ctrlName"/>
+    </div>
+</div>
+
+</body>
+</html>

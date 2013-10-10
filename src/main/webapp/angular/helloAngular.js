@@ -18,6 +18,10 @@ myApp.controller('MainCtrl', ['$scope','Matha', function ($scope,Matha) {
         return item > $scope.lowerBound;
     };
 
+    var message = $scope.myModel='';
+
+    console.log(message);
+
 }]);
 
 myApp.directive('customButton', function () {
